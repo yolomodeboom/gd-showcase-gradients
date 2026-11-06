@@ -1,0 +1,41 @@
+name: Build Top 6 AREDL Gradients
+
+on:
+  repository_dispatch:
+    types: [top-six-updated]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: top-six-artwork
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install requirements
+        run: python -m pip install -r requirements.txt
+      - name: Generate both PNGs
+        run: python generate.py
+      - name: Commit generated artwork
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add assets/left.png assets/right.png assets/manifest.json
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+          else
+            git commit -m "Update top-six artwork [skip ci]"
+            git push origin HEAD:main
+          fi
