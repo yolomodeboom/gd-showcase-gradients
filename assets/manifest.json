@@ -1,14 +1,8 @@
 {
   "schema_version": 1,
-  "signature": "society|ashley wave trials|acheron|slaughterhouse|sakupen circles|solar flare",
-  "generated_utc": "2026-11-06T17:01:40.991178+00:00",
+  "signature": "ashley wave trials|acheron|slaughterhouse|sakupen circles|solar flare|arcturus",
+  "generated_utc": "2026-11-06T17:14:19.987350+00:00",
   "levels": [
-    {
-      "name": "Society",
-      "aredl_rank": 3,
-      "level_id": "127323087",
-      "focus_x": null
-    },
     {
       "name": "Ashley Wave Trials",
       "aredl_rank": 16,
@@ -38,6 +32,12 @@
       "aredl_rank": 78,
       "level_id": "90390075",
       "focus_x": 0.43
+    },
+    {
+      "name": "Arcturus",
+      "aredl_rank": 107,
+      "level_id": "72315402",
+      "focus_x": 0.6
     }
   ],
   "images": {
