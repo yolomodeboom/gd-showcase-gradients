@@ -100,7 +100,12 @@ function yoloFiveRemoveBlankRow4() {
     // The existing helper keeps image anchors, offsets and widths unchanged.
     // Only the displayed height is reduced to match the 30-pixel removal.
     imagesToReplace.forEach(function(item) {
-      item.image.setHeight(NEW_HEIGHT);
+      // The screen height can differ from the PNG's native pixel height.
+      // Subtract only the exact removed spacer height, preserving layout.
+      const originalDisplayHeight = item.image.getHeight();
+      if (originalDisplayHeight <= PREVIOUS_ROW4_HEIGHT)
+        throw new Error('Unexpected tiny artwork height; aborting.');
+      item.image.setHeight(originalDisplayHeight - PREVIOUS_ROW4_HEIGHT);
       yoloFiveReplacePreservingLayout_(item.image, item.blob);
     });
     sheetsToCompact.forEach(sheet => sheet.hideRows(4));
