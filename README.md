@@ -33,4 +33,4 @@ python generate.py
 
 The fallback demo manifest includes the current known six level IDs. A `repository_dispatch` uses the live ordered six names and ranks from your Google Sheet instead.
 
-Images are 335×2897 PNGs (below the Google Sheets one-million-pixel limit). Each must be under 2 MB. If an AREDL thumbnail or level ID cannot be resolved reliably, generation fails and the last good images remain in the sheet.
+The five sorted showcase images are **346×2883 PNGs** (997,518 pixels, below the Google Sheets one-million-pixel limit). Each must be under 2 MB. After updating from the previous 348×2867 artwork, add [`apps-script/Fix_Side_Panel_Height_Once.gs`](apps-script/Fix_Side_Panel_Height_Once.gs) to the installed Apps Script project and run `yoloFiveFixSidePanelHeightOnce` once to extend the ten displayed images and force the refresh. Updating GitHub alone cannot edit the installed Apps Script project; its existing image replacement code preserves the on-sheet display height. If an AREDL thumbnail or level ID cannot be resolved reliably, generation fails and the last good images remain in the sheet.
