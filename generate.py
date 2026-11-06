@@ -16,7 +16,7 @@ ROOT = Path(__file__).parent
 OUT = ROOT / "assets"
 GD_ART = "https://raw.githubusercontent.com/All-Rated-Extreme-Demon-List/Thumbnails/main/levels/full/{}.webp"
 AREDL_API = "https://api.aredl.net/v2/api/aredl/levels"
-WIDTH, HEIGHT = 335, 2897  # strictly below Google Sheets' one-million-pixel limit
+WIDTH, HEIGHT = 345, 2897  # strictly below Google Sheets' one-million-pixel limit
 KNOWN = {
     "ashley wave trials": ("62912799", .82),
     "acheron": ("73667628", .40),
