@@ -1,0 +1,32 @@
+name: IMAGE Formula Quality Lab
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "generate_slices_lab.py"
+      - ".github/workflows/formula-lab.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  slices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install Pillow requests
+      - run: python generate_slices_lab.py
+      - name: Publish test images only
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add assets/lab-halves/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add IMAGE formula two-half artwork test [skip ci]"
+            git push origin HEAD:main
+          fi
