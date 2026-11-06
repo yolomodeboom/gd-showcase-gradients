@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "signature": "ashley wave trials|acheron|slaughterhouse|sakupen circles|solar flare|arcturus",
+  "generated_utc": "2026-11-06T16:51:19.390984+00:00",
+  "levels": [
+    {
+      "name": "Ashley Wave Trials",
+      "aredl_rank": 16,
+      "level_id": "62912799",
+      "focus_x": 0.82
+    },
+    {
+      "name": "Acheron",
+      "aredl_rank": 27,
+      "level_id": "73667628",
+      "focus_x": 0.4
+    },
+    {
+      "name": "Slaughterhouse",
+      "aredl_rank": 38,
+      "level_id": "27690100",
+      "focus_x": 0.4
+    },
+    {
+      "name": "Sakupen Circles",
+      "aredl_rank": 46,
+      "level_id": "76962930",
+      "focus_x": 0.55
+    },
+    {
+      "name": "Solar Flare",
+      "aredl_rank": 78,
+      "level_id": "90390075",
+      "focus_x": 0.43
+    },
+    {
+      "name": "Arcturus",
+      "aredl_rank": 107,
+      "level_id": "72315402",
+      "focus_x": 0.6
+    }
+  ],
+  "images": {
+    "left": "assets/left.png",
+    "right": "assets/right.png"
+  }
+}
