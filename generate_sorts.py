@@ -22,7 +22,7 @@ from generate import OUT, make_panel, resolve, save_png, normalized
 # legacy generator unchanged; render the five-sort panels at the new
 # visible grid height, with the maximum width under Sheets' 1M-pixel cap.
 import generate as gradient_core
-gradient_core.WIDTH, gradient_core.HEIGHT = 348, 2867  # 997,716 pixels
+gradient_core.WIDTH, gradient_core.HEIGHT = 346, 2883  # 997,518 pixels; +16px bottom coverage
 
 BASE = Path(__file__).parent
 MODES = {
