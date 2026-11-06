@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-11-06T18:16:19.652112+00:00",
+  "modes": {
+    "aredl": {
+      "title": "AREDL placement",
+      "signature": "ashley wave trials|acheron|slaughterhouse|sakupen circles|solar flare|arcturus",
+      "levels": [
+        {
+          "name": "Ashley Wave Trials",
+          "aredl_rank": 16,
+          "level_id": "62912799",
+          "focus_x": 0.82
+        },
+        {
+          "name": "Acheron",
+          "aredl_rank": 27,
+          "level_id": "73667628",
+          "focus_x": 0.4
+        },
+        {
+          "name": "Slaughterhouse",
+          "aredl_rank": 38,
+          "level_id": "27690100",
+          "focus_x": 0.4
+        },
+        {
+          "name": "Sakupen Circles",
+          "aredl_rank": 46,
+          "level_id": "76962930",
+          "focus_x": 0.55
+        },
+        {
+          "name": "Solar Flare",
+          "aredl_rank": 78,
+          "level_id": "90390075",
+          "focus_x": 0.43
+        },
+        {
+          "name": "Arcturus",
+          "aredl_rank": 107,
+          "level_id": "72315402",
+          "focus_x": 0.6
+        }
+      ],
+      "images": {
+        "left": "assets/sorts/aredl/left.png",
+        "right": "assets/sorts/aredl/right.png"
+      }
+    },
+    "most": {
+      "title": "Most attempts",
+      "signature": "acheron|slaughterhouse|sakupen circles|tartarus|ashley wave trials|promethean",
+      "levels": [
+        {
+          "name": "Acheron",
+          "aredl_rank": 27,
+          "level_id": "73667628",
+          "focus_x": 0.4
+        },
+        {
+          "name": "Slaughterhouse",
+          "aredl_rank": 38,
+          "level_id": "27690100",
+          "focus_x": 0.4
+        },
+        {
+          "name": "Sakupen Circles",
+          "aredl_rank": 46,
+          "level_id": "76962930",
+          "focus_x": 0.55
+        },
+        {
+          "name": "Tartarus",
+          "aredl_rank": 112,
+          "level_id": "59075347",
+          "focus_x": null
+        },
+        {
+          "name": "Ashley Wave Trials",
+          "aredl_rank": 16,
+          "level_id": "62912799",
+          "focus_x": 0.82
+        },
+        {
+          "name": "Promethean",
+          "aredl_rank": 187,
+          "level_id": "69333212",
+          "focus_x": null
+        }
+      ],
+      "images": {
+        "left": "assets/sorts/most/left.png",
+        "right": "assets/sorts/most/right.png"
+      }
+    },
+    "least": {
+      "title": "Least attempts",
+      "signature": "lone|rauchkammer|sakupen joy|sweater weather|acropolix|brutal",
+      "levels": [
+        {
+          "name": "Lone",
+          "aredl_rank": 1597,
+          "level_id": "141662502",
+          "focus_x": null
+        },
+        {
+          "name": "Rauchkammer",
+          "aredl_rank": 1614,
+          "level_id": "146399247",
+          "focus_x": null
+        },
+        {
+          "name": "Sakupen Joy",
+          "aredl_rank": 896,
+          "level_id": "139286842",
+          "focus_x": null
+        },
+        {
+          "name": "Sweater Weather",
+          "aredl_rank": 1607,
+          "level_id": "81148582",
+          "focus_x": null
+        },
+        {
+          "name": "AcropoliX",
+          "aredl_rank": 1439,
+          "level_id": "19300593",
+          "focus_x": null
+        },
+        {
+          "name": "Brutal",
+          "aredl_rank": 1592,
+          "level_id": "138356396",
+          "focus_x": null
+        }
+      ],
+      "images": {
+        "left": "assets/sorts/least/left.png",
+        "right": "assets/sorts/least/right.png"
+      }
+    },
+    "newest": {
+      "title": "Newest first",
+      "signature": "death corridor z|honeycrisp|sakupen joy|tech manifestation|lone|acheron",
+      "levels": [
+        {
+          "name": "Death Corridor Z",
+          "aredl_rank": 319,
+          "level_id": "38403655",
+          "focus_x": null
+        },
+        {
+          "name": "Honeycrisp",
+          "aredl_rank": 384,
+          "level_id": "139946318",
+          "focus_x": null
+        },
+        {
+          "name": "Sakupen Joy",
+          "aredl_rank": 896,
+          "level_id": "139286842",
+          "focus_x": null
+        },
+        {
+          "name": "Tech Manifestation",
+          "aredl_rank": 1285,
+          "level_id": "55985772",
+          "focus_x": null
+        },
+        {
+          "name": "Lone",
+          "aredl_rank": 1597,
+          "level_id": "141662502",
+          "focus_x": null
+        },
+        {
+          "name": "Acheron",
+          "aredl_rank": 27,
+          "level_id": "73667628",
+          "focus_x": 0.4
+        }
+      ],
+      "images": {
+        "left": "assets/sorts/newest/left.png",
+        "right": "assets/sorts/newest/right.png"
+      }
+    },
+    "oldest": {
+      "title": "Oldest first",
+      "signature": "pumped up kicks|cataclysm|unearthed|epsilon|betrayal of fate|blade of justice",
+      "levels": [
+        {
+          "name": "Pumped Up Kicks",
+          "aredl_rank": 1163,
+          "level_id": "48353992",
+          "focus_x": null
+        },
+        {
+          "name": "Cataclysm",
+          "aredl_rank": 1514,
+          "level_id": "3979721",
+          "focus_x": null
+        },
+        {
+          "name": "Unearthed",
+          "aredl_rank": 1334,
+          "level_id": "50833396",
+          "focus_x": null
+        },
+        {
+          "name": "Epsilon",
+          "aredl_rank": 820,
+          "level_id": "48843446",
+          "focus_x": null
+        },
+        {
+          "name": "Betrayal of Fate",
+          "aredl_rank": 795,
+          "level_id": "20329544",
+          "focus_x": null
+        },
+        {
+          "name": "Blade of Justice",
+          "aredl_rank": 766,
+          "level_id": "35448603",
+          "focus_x": null
+        }
+      ],
+      "images": {
+        "left": "assets/sorts/oldest/left.png",
+        "right": "assets/sorts/oldest/right.png"
+      }
+    }
+  }
+}
