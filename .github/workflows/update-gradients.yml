@@ -1,6 +1,13 @@
 name: Build Top 6 AREDL Gradients
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-gradients.yml'
+      - 'generate.py'
+      - 'requirements.txt'
+      - 'demo_top6.json'
   repository_dispatch:
     types: [top-six-updated]
   workflow_dispatch:
