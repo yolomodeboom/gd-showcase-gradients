@@ -43,5 +43,18 @@ jobs:
             echo "No changes"
           else
             git commit -m "Refresh five sorted showcases [skip ci]"
-            git push origin HEAD:main
+            # The sheet, image source, or helper may be edited while this
+            # action renders its ten PNGs. Rebase only this artwork commit
+            # onto the latest main instead of dropping the finished build.
+            for attempt in 1 2 3 4; do
+              if git push origin HEAD:main; then
+                echo "Artwork published successfully"
+                exit 0
+              fi
+              echo "Main moved during rendering (attempt $attempt); rebasing"
+              git fetch origin main
+              git rebase origin/main
+            done
+            echo "Could not publish images after four rebases" >&2
+            exit 1
           fi
