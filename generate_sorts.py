@@ -18,6 +18,12 @@ from pathlib import Path
 
 from generate import OUT, make_panel, resolve, save_png, normalized
 
+# Row 4 is visually hidden in each showcase. Keep the AREDL-only
+# legacy generator unchanged; render the five-sort panels at the new
+# visible grid height, with the maximum width under Sheets' 1M-pixel cap.
+import generate as gradient_core
+gradient_core.WIDTH, gradient_core.HEIGHT = 348, 2867  # 997,716 pixels
+
 BASE = Path(__file__).parent
 MODES = {
     "aredl": "AREDL placement",
